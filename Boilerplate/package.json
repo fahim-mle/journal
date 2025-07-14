@@ -1,0 +1,18 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "MERN stack boilerplate application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": ["mern", "react", "node", "express", "mongodb"],
+  "author": "",
+  "license": "MIT"
+}
